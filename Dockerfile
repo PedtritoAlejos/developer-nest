@@ -12,6 +12,7 @@ WORKDIR /app
 # Copy configuration files
 COPY tsconfig*.json ./
 COPY package*.json ./
+COPY .env ./
 
 # Install dependencies from package-lock.json, see https://docs.npmjs.com/cli/v7/commands/npm-ci
 RUN npm ci

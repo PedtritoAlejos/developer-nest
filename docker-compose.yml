@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  node:
+    build: .
+    image: api-service-developer:1
+    container_name: api-service-developers
+    command: npm run start
+    ports:
+      - "5000:3000"
+    env_file:
+      - .env

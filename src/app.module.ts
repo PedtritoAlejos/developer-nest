@@ -11,11 +11,11 @@ import { getProperty } from './perfil/config/config';
 @Module({
   imports: [TypeOrmModule.forRoot(
     {  
-    type: getProperty("TYPE") ,
-    host: getProperty("HOST"),
-    port: getProperty("PORT"),
-    username: getProperty("USERNAME"),
-    password: getProperty("PASSWORD"),
+    type: getProperty("TYPE_DB") ,
+    host: getProperty("HOST_DB"),
+    port: getProperty("PORT_DB"),
+    username: getProperty("USERNAME_DB"),
+    password: getProperty("PASSWORD_DB"),
     database: getProperty("DATABASE"),
     synchronize: getProperty("SYNCHRONIZE"),
     entities: ["dist/**/*.entity{.ts,.js}"]

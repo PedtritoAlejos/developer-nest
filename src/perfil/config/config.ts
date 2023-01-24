@@ -2,12 +2,12 @@
 import { load } from 'ts-dotenv';
 
 const env = load({
-  TYPE:String,
+  TYPE_DB:String,
   DATABASE: String,
-  HOST:String,
-  PORT: Number,
-  USERNAME:String,
-  PASSWORD:String,
+  HOST_DB:String,
+  PORT_DB: Number,
+  USERNAME_DB:String,
+  PASSWORD_DB:String,
   SYNCHRONIZE:Boolean,
 
 });

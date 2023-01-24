@@ -35,6 +35,7 @@ export class PerfilService {
   }
 
   async findOneByScore(score: number) : Promise<Perfil>{
+    
     const perfiles : Perfil[] = await this.findAll();
 
     return perfiles.find( (p:Perfil)=> score <= p.value) ;
